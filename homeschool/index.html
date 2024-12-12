@@ -8,30 +8,54 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <style>
-      :root {
-        --primary: #00a89c;
-        --secondary: #1b3b5c;
-        --accent: #ffd700;
-      }
-      .bg-brand-primary {
-        background-color: var(--primary);
-      }
-      .bg-brand-secondary {
-        background-color: var(--secondary);
-      }
-      .bg-brand-accent {
-        background-color: var(--accent);
-      }
-      .text-brand-primary {
-        color: var(--primary);
-      }
-      .text-brand-secondary {
-        color: var(--secondary);
-      }
-      .border-brand-primary {
-        border-color: var(--primary);
-      }
+     <style>
+        :root {
+            --primary: #00A89C;
+            --secondary: #1B3B5C;
+            --accent: #FFD700;
+        }
+        .bg-brand-primary { background-color: var(--primary); }
+        .bg-brand-secondary { background-color: var(--secondary); }
+        .bg-brand-accent { background-color: var(--accent); }
+        .text-brand-primary { color: var(--primary); }
+        .text-brand-secondary { color: var(--secondary); }
+        .border-brand-primary { border-color: var(--primary); }
+        
+        /* Responsive typography */
+        @media (min-width: 768px) and (max-width: 1280px) {
+            .nav-link {
+                font-size: 14px;
+                white-space: nowrap;
+            }
+            .btn-text {
+                font-size: 14px;
+                white-space: nowrap;
+            }
+        }
+        
+        /* Hero overlay styles */
+        .hero-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
     </style>
   </head>
 
